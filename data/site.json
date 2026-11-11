@@ -1,0 +1,41 @@
+{
+  "_readme": "PLACEHOLDER contact details. Replace phone, email, hours, and showroom address before relying on the live site. Do not invent a contractor license number.",
+  "name": "Sunset Coast Windows",
+  "legalName": "Sunset Coast Windows",
+  "domain": "sunsetcoastwindows.com",
+  "url": "https://sunsetcoastwindows.com",
+  "tagline": "Window replacement for the greater Los Angeles coast.",
+  "phoneDisplay": "(213) 555-0148",
+  "phoneTel": "+12135550148",
+  "phoneIsPlaceholder": true,
+  "email": "estimates@sunsetcoastwindows.com",
+  "emailIsPlaceholder": true,
+  "address": {
+    "street": "",
+    "city": "Los Angeles",
+    "region": "CA",
+    "postalCode": "",
+    "publicNote": "Greater Los Angeles · showroom address to be added"
+  },
+  "addressIsPlaceholder": true,
+  "hours": "Mon–Sat 8:00 AM – 6:00 PM",
+  "hoursIsPlaceholder": true,
+  "openingHoursSpec": ["Mo-Sa 08:00-18:00"],
+  "priceRange": "$$",
+  "workmanshipWarranty": "Written workmanship warranty on every install. The term is stated on your contract.",
+  "workmanshipWarrantyIsPlaceholder": true,
+  "supply": "Windows are ordered through Beacon Building Products (now part of QXO).",
+  "smsConsent": "I agree to receive text messages from Sunset Coast Windows at the number provided about my estimate, order, or appointment. Msg & data rates may apply, msg frequency varies. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.",
+  "timeWindows": [
+    "8:00 – 10:00 AM",
+    "10:00 AM – 12:00 PM",
+    "12:00 – 2:00 PM",
+    "2:00 – 4:00 PM",
+    "4:00 – 6:00 PM"
+  ],
+  "payment": {
+    "status": "not_connected",
+    "hookId": "payment-slot",
+    "customerCopy": "No payment is collected online yet. This is where a deposit step (for example Stripe) will plug in. We never ask for card numbers on this form."
+  }
+}

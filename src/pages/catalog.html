@@ -1,0 +1,39 @@
+<section class="page-hero container">
+  <p class="kicker">Catalog</p>
+  <h1>Windows we order through Beacon.</h1>
+  <p>Lines drawn from Beacon Building Products’ public catalog where a listing is called out on the card. Prices are installed estimates for a typical size — white frame, no grids, standard Low-E, retrofit install. Replace the numbers in the pricing file before you treat them as your real retail.</p>
+</section>
+<div class="container">
+  <div class="filters" aria-label="Filter the catalog">
+    <div class="filter-row" role="group" aria-label="Type">
+      <button type="button" data-filter="type" data-value="all" class="is-on">All types</button>
+      <button type="button" data-filter="type" data-value="single-hung">Single hung</button>
+      <button type="button" data-filter="type" data-value="double-hung">Double hung</button>
+      <button type="button" data-filter="type" data-value="slider">Slider</button>
+      <button type="button" data-filter="type" data-value="casement">Casement</button>
+      <button type="button" data-filter="type" data-value="awning">Awning</button>
+      <button type="button" data-filter="type" data-value="picture">Picture</button>
+      <button type="button" data-filter="type" data-value="bay-bow">Bay &amp; bow</button>
+      <button type="button" data-filter="type" data-value="garden">Garden</button>
+      <button type="button" data-filter="type" data-value="specialty">Specialty</button>
+      <button type="button" data-filter="type" data-value="patio">Patio doors</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Tier">
+      <button type="button" data-filter="tier" data-value="all" class="is-on">All tiers</button>
+      <button type="button" data-filter="tier" data-value="good">Good</button>
+      <button type="button" data-filter="tier" data-value="better">Better</button>
+      <button type="button" data-filter="tier" data-value="best">Best</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Design and material">
+      <button type="button" data-filter="design" data-value="all" class="is-on">All designs</button>
+      <button type="button" data-filter="design" data-value="traditional">Traditional</button>
+      <button type="button" data-filter="design" data-value="contemporary">Contemporary</button>
+      <button type="button" data-filter="design" data-value="architectural">Architectural</button>
+      <button type="button" data-filter="material" data-value="all" class="is-on">All materials</button>
+      <button type="button" data-filter="material" data-value="vinyl">Vinyl</button>
+    </div>
+  </div>
+  <div id="catalog-grid" class="catalog-grid">{{CATALOG_CARDS}}</div>
+  <p id="catalog-empty" class="lede" hidden>Nothing in the catalog matches those filters.</p>
+  <p class="lede" style="margin:1.4rem 0 3rem">Frame colors, grids, and glass are chosen on the estimate. A card marked “confirm with Beacon” is a configuration in a brand Beacon distributes, and we verify the exact series before it is ordered.</p>
+</div>

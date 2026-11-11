@@ -1,0 +1,89 @@
+{
+  "_readme": "PLACEHOLDER Los Angeles retail prices. Jeremy must replace every number with the real customer price (supplier cost plus markup, calculated offline). NEVER put supplier cost or markup in this file. This repository is public. The website reads only these customer prices and never displays cost or margin.",
+  "_placeholder": true,
+  "currency": "USD",
+  "products": {
+    "mi-v2000-single-hung": { "baseCents": 15000, "perUnitedInchCents": 250 },
+    "atrium-150-single-hung": { "baseCents": 14500, "perUnitedInchCents": 245 },
+    "simonton-contractor-single-hung": { "baseCents": 23000, "perUnitedInchCents": 335 },
+    "paradigm-society-double-hung": { "baseCents": 34000, "perUnitedInchCents": 460 },
+    "plygem-nailfin-double-hung": { "baseCents": 17500, "perUnitedInchCents": 270 },
+    "plygem-5000-double-hung": { "baseCents": 25000, "perUnitedInchCents": 350 },
+    "paradigm-versatec-twin": { "baseCents": 52000, "perUnitedInchCents": 480 },
+    "plygem-2000-slider": { "baseCents": 19000, "perUnitedInchCents": 270 },
+    "plygem-2000-slider-3": { "baseCents": 28000, "perUnitedInchCents": 310 },
+    "simonton-slider": { "baseCents": 36000, "perUnitedInchCents": 390 },
+    "mi-v3000-casement": { "baseCents": 28000, "perUnitedInchCents": 380 },
+    "plygem-pro-casement": { "baseCents": 39000, "perUnitedInchCents": 510 },
+    "plygem-awning": { "baseCents": 30000, "perUnitedInchCents": 400 },
+    "simonton-builder-picture": { "baseCents": 14000, "perUnitedInchCents": 230 },
+    "paradigm-craftec-picture": { "baseCents": 26000, "perUnitedInchCents": 340 },
+    "atrium-150-half-round": { "baseCents": 26000, "perUnitedInchCents": 320 },
+    "geometric-arch": { "baseCents": 34000, "perUnitedInchCents": 380 },
+    "vinyl-bay": { "baseCents": 140000, "perUnitedInchCents": 800 },
+    "vinyl-bow": { "baseCents": 180000, "perUnitedInchCents": 900 },
+    "vinyl-garden": { "baseCents": 42000, "perUnitedInchCents": 400 },
+    "patio-slider-2": { "baseCents": 82000, "perUnitedInchCents": 550 },
+    "patio-slider-3": { "baseCents": 128000, "perUnitedInchCents": 620 }
+  },
+  "frameColors": {
+    "white": 0,
+    "almond": 4000,
+    "driftwood": 7500,
+    "bronze": 11000,
+    "black": 14000
+  },
+  "grids": {
+    "none": 0,
+    "colonial": 4800,
+    "prairie": 5800
+  },
+  "glass": {
+    "dual-low-e": 0,
+    "solar-low-e": 5500,
+    "triple": 16000,
+    "tempered": 7500,
+    "obscure": 3500
+  },
+  "installation": {
+    "_comment": "Per window, by united inches (width + height). This is the retrofit / insert install price and is included in every estimate.",
+    "window": [
+      { "maxUnitedInches": 75, "perWindowCents": 17500 },
+      { "maxUnitedInches": 105, "perWindowCents": 22500 },
+      { "maxUnitedInches": 140, "perWindowCents": 29500 },
+      { "maxUnitedInches": 1000, "perWindowCents": 38500 }
+    ],
+    "bay": [
+      { "maxUnitedInches": 160, "perWindowCents": 52000 },
+      { "maxUnitedInches": 220, "perWindowCents": 69000 },
+      { "maxUnitedInches": 1000, "perWindowCents": 82000 }
+    ],
+    "door": [
+      { "maxUnitedInches": 180, "perWindowCents": 54500 },
+      { "maxUnitedInches": 240, "perWindowCents": 71000 },
+      { "maxUnitedInches": 1000, "perWindowCents": 86000 }
+    ]
+  },
+  "addons": {
+    "removal": {
+      "label": "Remove and dispose of the old window",
+      "perUnitCents": 5500
+    },
+    "retrofit": {
+      "label": "Retrofit / insert install (stucco-friendly)",
+      "perUnitCents": 0
+    },
+    "fullFrame": {
+      "label": "Full-frame replacement instead of a retrofit insert",
+      "perUnitCents": 19500
+    },
+    "stucco": {
+      "label": "Stucco patch and color coat",
+      "perUnitCents": 12500
+    },
+    "permit": {
+      "label": "Permit coordination for this project",
+      "perProjectCents": 32500
+    }
+  }
+}

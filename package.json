@@ -1,0 +1,11 @@
+{
+  "name": "sunset-coast-windows",
+  "private": true,
+  "description": "Sunset Coast Windows static site. Output is committed in public/. No build script — Vercel serves public/ as-is.",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.0.0"
+  }
+}

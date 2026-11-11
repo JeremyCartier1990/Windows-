@@ -1,0 +1,86 @@
+<section class="page-hero container">
+  <p class="kicker">About</p>
+  <h1>A window company for this coastline.</h1>
+  <p>Sunset Coast Windows replaces windows and patio doors for homes across greater Los Angeles. We are a new company. The work is straightforward: the right vinyl line, an honest installed price, and a crew that leaves the stucco looking the way we found it.</p>
+</section>
+<section class="section" style="padding-top:1rem">
+  <div class="container split-media">
+    <img src="/images/interior.jpg" width="1152" height="864" alt="A white gridded window looking out over the Pacific from a bright living room">
+    <div>
+      <h2>What we actually do</h2>
+      <p>Most of the houses we see still have their original aluminum sliders. They fog, they stick, and they leak air when the marine layer sits on the west side. We replace them with vinyl windows ordered through Beacon Building Products, now part of QXO, including lines from Simonton, Ply Gem, MI Windows, Paradigm, and Atrium.</p>
+      <p>You can price the project online. If the tape measure makes you nervous, book a visit. The number you saw stays the starting point, and the final quote is written after we measure.</p>
+      <ul class="check-list">
+        <li>Low-E glass as the baseline, with tempered glass where the opening needs it.</li>
+        <li>Retrofit inserts for stucco, and full-frame when the old frame is done.</li>
+        <li>A written workmanship warranty on the install, plus the manufacturer’s warranty on the window.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="contact" style="padding-top:0">
+  <div class="container" style="display:grid;gap:1rem">
+    <div class="panel">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <a href="tel:+12135550148">(213) 555-0148</a> <span class="placeholder-tag">Placeholder — replace</span></p>
+      <p><strong>Email:</strong> <a href="mailto:estimates@sunsetcoastwindows.com">estimates@sunsetcoastwindows.com</a> <span class="placeholder-tag">Placeholder — replace</span></p>
+      <p><strong>Showroom:</strong> Greater Los Angeles. Street address not set yet. <span class="placeholder-tag">Placeholder — replace</span></p>
+      <p><strong>Hours:</strong> Mon–Sat 8:00 AM – 6:00 PM <span class="placeholder-tag">Placeholder — replace</span></p>
+      <p>The license number will be published here once it is issued. We will not invent one.</p>
+    </div>
+    <form class="panel" id="contact-form">
+      <h2>Send a note</h2>
+      <label class="field">Name<input name="name" autocomplete="name" required></label>
+      <label class="field">Email<input name="email" type="email" autocomplete="email" required></label>
+      <label class="field">Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label class="field">ZIP<input name="zip" inputmode="numeric" autocomplete="postal-code"></label>
+      <label class="field">How can we help?<textarea name="notes" rows="4" required></textarea></label>
+      {{SMS_CONSENT}}
+      <div class="hp"><label>Company website<input name="companyWebsite" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-error" hidden></div>
+      <p class="form-success" hidden role="status"></p>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    var form = event.currentTarget;
+    var error = form.querySelector(".form-error");
+    var success = form.querySelector(".form-success");
+    error.hidden = true;
+    success.hidden = true;
+    function val(name) { return form.querySelector("[name='" + name + "']").value.trim(); }
+    var consent = form.querySelector("[name=smsConsent]").checked;
+    if (!consent) {
+      error.hidden = false;
+      error.textContent = "Check the box to agree to text messages, or call us instead.";
+      return;
+    }
+    var body = {
+      intent: "contact",
+      lines: [],
+      addons: {},
+      serviceArea: null,
+      customer: { name: val("name"), email: val("email"), phone: val("phone"), zip: val("zip"), notes: val("notes"), smsConsent: true, address: "", city: "" },
+      companyWebsite: val("companyWebsite"),
+      page: "/about"
+    };
+    var button = form.querySelector("button");
+    button.disabled = true;
+    try {
+      var res = await fetch("/api/estimate", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+      var data = await res.json();
+      if (!res.ok || !data.ok) throw new Error((data.errors && data.errors[0]) || data.error || "Could not send");
+      success.hidden = false;
+      success.textContent = "Received. Your confirmation is " + data.confirmationCode + ".";
+      form.reset();
+    } catch (err) {
+      error.hidden = false;
+      error.textContent = err.message || "Could not send.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>

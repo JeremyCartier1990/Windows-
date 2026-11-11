@@ -1,0 +1,1728 @@
+{
+  "_readme": "Editable service area for Sunset Coast Windows. A ZIP or city is served when it appears here. Cover greater Los Angeles: Los Angeles County plus nearby Orange County and Ventura County. Add a city or ZIP and rebuild with python3 build.py. Do not add San Bernardino, Riverside, or Santa Barbara unless you decide to expand.",
+  "regionLabel": "Greater Los Angeles",
+  "counties": [
+    {
+      "id": "Los Angeles",
+      "name": "Los Angeles County",
+      "aliases": [
+        "la county",
+        "l a county",
+        "los angeles county"
+      ]
+    },
+    {
+      "id": "Orange",
+      "name": "Orange County",
+      "aliases": [
+        "oc",
+        "o c",
+        "orange county"
+      ]
+    },
+    {
+      "id": "Ventura",
+      "name": "Ventura County",
+      "aliases": [
+        "ventura county"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "city": "Los Angeles",
+      "county": "Los Angeles",
+      "zips": [
+        "90001",
+        "90002",
+        "90003",
+        "90004",
+        "90005",
+        "90006",
+        "90007",
+        "90008",
+        "90010",
+        "90011",
+        "90012",
+        "90013",
+        "90014",
+        "90015",
+        "90016",
+        "90017",
+        "90018",
+        "90019",
+        "90020",
+        "90021",
+        "90023",
+        "90024",
+        "90025",
+        "90026",
+        "90027",
+        "90028",
+        "90029",
+        "90031",
+        "90032",
+        "90033",
+        "90034",
+        "90035",
+        "90036",
+        "90037",
+        "90038",
+        "90039",
+        "90041",
+        "90042",
+        "90043",
+        "90044",
+        "90045",
+        "90046",
+        "90047",
+        "90049",
+        "90056",
+        "90057",
+        "90058",
+        "90059",
+        "90061",
+        "90062",
+        "90063",
+        "90064",
+        "90065",
+        "90066",
+        "90067",
+        "90068",
+        "90071",
+        "90077",
+        "90089",
+        "90094",
+        "90095",
+        "91303",
+        "91304",
+        "91306",
+        "91307",
+        "91311",
+        "91316",
+        "91324",
+        "91325",
+        "91326",
+        "91331",
+        "91335",
+        "91340",
+        "91342",
+        "91343",
+        "91344",
+        "91345",
+        "91356",
+        "91364",
+        "91367",
+        "91401",
+        "91402",
+        "91403",
+        "91405",
+        "91406",
+        "91411",
+        "91423",
+        "91436",
+        "91601",
+        "91602",
+        "91604",
+        "91605",
+        "91606",
+        "91607",
+        "91608",
+        "90291",
+        "90293",
+        "90731",
+        "90732",
+        "90744",
+        "90710",
+        "91040",
+        "91042"
+      ],
+      "aliases": [
+        "la",
+        "l a",
+        "hollywood",
+        "east hollywood",
+        "hollywood hills",
+        "los feliz",
+        "silver lake",
+        "echo park",
+        "dtla",
+        "downtown",
+        "downtown los angeles",
+        "koreatown",
+        "mid city",
+        "mid wilshire",
+        "venice",
+        "mar vista",
+        "playa del rey",
+        "playa vista",
+        "westchester",
+        "brentwood",
+        "bel air",
+        "pacific palisades",
+        "eagle rock",
+        "highland park",
+        "mount washington",
+        "cypress park",
+        "boyle heights",
+        "lincoln heights",
+        "el sereno",
+        "west adams",
+        "leimert park",
+        "view park",
+        "baldwin hills",
+        "hyde park",
+        "watts",
+        "florence",
+        "athens",
+        "westlake",
+        "pico union",
+        "exposition park",
+        "university park",
+        "encino",
+        "sherman oaks",
+        "van nuys",
+        "north hollywood",
+        "noho",
+        "studio city",
+        "valley village",
+        "woodland hills",
+        "west hills",
+        "winnetka",
+        "reseda",
+        "tarzana",
+        "canoga park",
+        "chatsworth",
+        "porter ranch",
+        "northridge",
+        "granada hills",
+        "mission hills",
+        "san fernando valley",
+        "sylmar",
+        "pacoima",
+        "sunland",
+        "tujunga",
+        "sun valley",
+        "panorama city",
+        "arlo",
+        "atwater village",
+        "los feliz",
+        "fairfax",
+        "miracle mile",
+        "sawtelle",
+        "palms",
+        "cheviot hills",
+        "rancho park",
+        "larchmont",
+        "hancock park",
+        "windsor square",
+        "jefferson park",
+        "exposition",
+        "harbor gateway",
+        "san pedro",
+        "wilmington",
+        "harbor city",
+        "terminal island"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Long Beach",
+      "county": "Los Angeles",
+      "zips": [
+        "90802",
+        "90803",
+        "90804",
+        "90805",
+        "90806",
+        "90807",
+        "90808",
+        "90810",
+        "90813",
+        "90814",
+        "90815"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Santa Monica",
+      "county": "Los Angeles",
+      "zips": [
+        "90401",
+        "90402",
+        "90403",
+        "90404",
+        "90405"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Beverly Hills",
+      "county": "Los Angeles",
+      "zips": [
+        "90210",
+        "90211",
+        "90212"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "West Hollywood",
+      "county": "Los Angeles",
+      "zips": [
+        "90069",
+        "90048"
+      ],
+      "aliases": [
+        "weho"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Culver City",
+      "county": "Los Angeles",
+      "zips": [
+        "90230",
+        "90232"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Inglewood",
+      "county": "Los Angeles",
+      "zips": [
+        "90301",
+        "90302",
+        "90303",
+        "90304",
+        "90305"
+      ],
+      "aliases": [
+        "lennox"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Pasadena",
+      "county": "Los Angeles",
+      "zips": [
+        "91101",
+        "91103",
+        "91104",
+        "91105",
+        "91106",
+        "91107",
+        "91108"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "South Pasadena",
+      "county": "Los Angeles",
+      "zips": [
+        "91030"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Glendale",
+      "county": "Los Angeles",
+      "zips": [
+        "91201",
+        "91202",
+        "91203",
+        "91204",
+        "91205",
+        "91206",
+        "91207",
+        "91208",
+        "91214"
+      ],
+      "aliases": [
+        "montrose"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Burbank",
+      "county": "Los Angeles",
+      "zips": [
+        "91501",
+        "91502",
+        "91504",
+        "91505",
+        "91506"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "La Ca\u00f1ada Flintridge",
+      "county": "Los Angeles",
+      "zips": [
+        "91011"
+      ],
+      "aliases": [
+        "la canada",
+        "la canada flintridge"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Altadena",
+      "county": "Los Angeles",
+      "zips": [
+        "91001"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Sierra Madre",
+      "county": "Los Angeles",
+      "zips": [
+        "91024"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Arcadia",
+      "county": "Los Angeles",
+      "zips": [
+        "91006",
+        "91007"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Monrovia",
+      "county": "Los Angeles",
+      "zips": [
+        "91016"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Duarte",
+      "county": "Los Angeles",
+      "zips": [
+        "91010"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Bradbury",
+      "county": "Los Angeles",
+      "zips": [
+        "91008"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Azusa",
+      "county": "Los Angeles",
+      "zips": [
+        "91702"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Irwindale",
+      "county": "Los Angeles",
+      "zips": [
+        "91706"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Glendora",
+      "county": "Los Angeles",
+      "zips": [
+        "91740",
+        "91741"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "San Dimas",
+      "county": "Los Angeles",
+      "zips": [
+        "91773"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "La Verne",
+      "county": "Los Angeles",
+      "zips": [
+        "91750"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Claremont",
+      "county": "Los Angeles",
+      "zips": [
+        "91711"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Pomona",
+      "county": "Los Angeles",
+      "zips": [
+        "91766",
+        "91767",
+        "91768"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Walnut",
+      "county": "Los Angeles",
+      "zips": [
+        "91789"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Diamond Bar",
+      "county": "Los Angeles",
+      "zips": [
+        "91765"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Covina",
+      "county": "Los Angeles",
+      "zips": [
+        "91722",
+        "91723",
+        "91724"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "West Covina",
+      "county": "Los Angeles",
+      "zips": [
+        "91790",
+        "91791",
+        "91792"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Baldwin Park",
+      "county": "Los Angeles",
+      "zips": [
+        "91706"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "El Monte",
+      "county": "Los Angeles",
+      "zips": [
+        "91731",
+        "91732"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "South El Monte",
+      "county": "Los Angeles",
+      "zips": [
+        "91733"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Rosemead",
+      "county": "Los Angeles",
+      "zips": [
+        "91770"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "San Gabriel",
+      "county": "Los Angeles",
+      "zips": [
+        "91775",
+        "91776"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Alhambra",
+      "county": "Los Angeles",
+      "zips": [
+        "91801",
+        "91803"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Monterey Park",
+      "county": "Los Angeles",
+      "zips": [
+        "91754",
+        "91755"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Temple City",
+      "county": "Los Angeles",
+      "zips": [
+        "91780"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Montebello",
+      "county": "Los Angeles",
+      "zips": [
+        "90640"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Pico Rivera",
+      "county": "Los Angeles",
+      "zips": [
+        "90660"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Whittier",
+      "county": "Los Angeles",
+      "zips": [
+        "90601",
+        "90602",
+        "90603",
+        "90604",
+        "90605",
+        "90606"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "La Habra Heights",
+      "county": "Los Angeles",
+      "zips": [
+        "90631"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Santa Fe Springs",
+      "county": "Los Angeles",
+      "zips": [
+        "90670"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "La Mirada",
+      "county": "Los Angeles",
+      "zips": [
+        "90638",
+        "90637"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Norwalk",
+      "county": "Los Angeles",
+      "zips": [
+        "90650"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Downey",
+      "county": "Los Angeles",
+      "zips": [
+        "90240",
+        "90241",
+        "90242"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Bellflower",
+      "county": "Los Angeles",
+      "zips": [
+        "90706"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Paramount",
+      "county": "Los Angeles",
+      "zips": [
+        "90723"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lakewood",
+      "county": "Los Angeles",
+      "zips": [
+        "90712",
+        "90713",
+        "90715"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Cerritos",
+      "county": "Los Angeles",
+      "zips": [
+        "90703"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Artesia",
+      "county": "Los Angeles",
+      "zips": [
+        "90701"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Hawaiian Gardens",
+      "county": "Los Angeles",
+      "zips": [
+        "90716"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Signal Hill",
+      "county": "Los Angeles",
+      "zips": [
+        "90755"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Compton",
+      "county": "Los Angeles",
+      "zips": [
+        "90220",
+        "90221",
+        "90222"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lynwood",
+      "county": "Los Angeles",
+      "zips": [
+        "90262"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "South Gate",
+      "county": "Los Angeles",
+      "zips": [
+        "90280"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Huntington Park",
+      "county": "Los Angeles",
+      "zips": [
+        "90255"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Bell",
+      "county": "Los Angeles",
+      "zips": [
+        "90201"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Bell Gardens",
+      "county": "Los Angeles",
+      "zips": [
+        "90201"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Maywood",
+      "county": "Los Angeles",
+      "zips": [
+        "90270"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Cudahy",
+      "county": "Los Angeles",
+      "zips": [
+        "90201"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Vernon",
+      "county": "Los Angeles",
+      "zips": [
+        "90058"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Commerce",
+      "county": "Los Angeles",
+      "zips": [
+        "90040"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "East Los Angeles",
+      "county": "Los Angeles",
+      "zips": [
+        "90022",
+        "90023",
+        "90063"
+      ],
+      "aliases": [
+        "east la",
+        "east los angeles"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Carson",
+      "county": "Los Angeles",
+      "zips": [
+        "90745",
+        "90746"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Gardena",
+      "county": "Los Angeles",
+      "zips": [
+        "90247",
+        "90248",
+        "90249"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Hawthorne",
+      "county": "Los Angeles",
+      "zips": [
+        "90250"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lawndale",
+      "county": "Los Angeles",
+      "zips": [
+        "90260"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Torrance",
+      "county": "Los Angeles",
+      "zips": [
+        "90501",
+        "90502",
+        "90503",
+        "90504",
+        "90505"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Redondo Beach",
+      "county": "Los Angeles",
+      "zips": [
+        "90277",
+        "90278"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Hermosa Beach",
+      "county": "Los Angeles",
+      "zips": [
+        "90254"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Manhattan Beach",
+      "county": "Los Angeles",
+      "zips": [
+        "90266"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "El Segundo",
+      "county": "Los Angeles",
+      "zips": [
+        "90245"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lomita",
+      "county": "Los Angeles",
+      "zips": [
+        "90717"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Rancho Palos Verdes",
+      "county": "Los Angeles",
+      "zips": [
+        "90275"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Palos Verdes Estates",
+      "county": "Los Angeles",
+      "zips": [
+        "90274"
+      ],
+      "aliases": [
+        "palos verdes"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Rolling Hills",
+      "county": "Los Angeles",
+      "zips": [
+        "90274"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Rolling Hills Estates",
+      "county": "Los Angeles",
+      "zips": [
+        "90274"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Marina del Rey",
+      "county": "Los Angeles",
+      "zips": [
+        "90292"
+      ],
+      "aliases": [
+        "marina"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Malibu",
+      "county": "Los Angeles",
+      "zips": [
+        "90265"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Calabasas",
+      "county": "Los Angeles",
+      "zips": [
+        "91302"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Agoura Hills",
+      "county": "Los Angeles",
+      "zips": [
+        "91301"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Westlake Village",
+      "county": "Los Angeles",
+      "zips": [
+        "91361"
+      ],
+      "aliases": [
+        "westlake"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Santa Clarita",
+      "county": "Los Angeles",
+      "zips": [
+        "91321",
+        "91350",
+        "91351",
+        "91354",
+        "91355",
+        "91381",
+        "91384",
+        "91387",
+        "91390"
+      ],
+      "aliases": [
+        "valencia",
+        "newhall",
+        "canyon country",
+        "stevenson ranch",
+        "castaic"
+      ],
+      "featured": true
+    },
+    {
+      "city": "San Fernando",
+      "county": "Los Angeles",
+      "zips": [
+        "91340"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Palmdale",
+      "county": "Los Angeles",
+      "zips": [
+        "93550",
+        "93551",
+        "93552",
+        "93591"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lancaster",
+      "county": "Los Angeles",
+      "zips": [
+        "93534",
+        "93535",
+        "93536"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Acton",
+      "county": "Los Angeles",
+      "zips": [
+        "93510"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Littlerock",
+      "county": "Los Angeles",
+      "zips": [
+        "93543"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Avalon",
+      "county": "Los Angeles",
+      "zips": [
+        "90704"
+      ],
+      "aliases": [
+        "catalina",
+        "catalina island"
+      ],
+      "featured": false
+    },
+    {
+      "city": "La Puente",
+      "county": "Los Angeles",
+      "zips": [
+        "91744",
+        "91746"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Hacienda Heights",
+      "county": "Los Angeles",
+      "zips": [
+        "91745"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Rowland Heights",
+      "county": "Los Angeles",
+      "zips": [
+        "91748"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Industry",
+      "county": "Los Angeles",
+      "zips": [
+        "91744",
+        "91745",
+        "91746",
+        "91789"
+      ],
+      "aliases": [
+        "city of industry"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Anaheim",
+      "county": "Orange",
+      "zips": [
+        "92801",
+        "92802",
+        "92804",
+        "92805",
+        "92806",
+        "92807",
+        "92808"
+      ],
+      "aliases": [
+        "anaheim hills"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Santa Ana",
+      "county": "Orange",
+      "zips": [
+        "92701",
+        "92703",
+        "92704",
+        "92705",
+        "92706",
+        "92707"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Irvine",
+      "county": "Orange",
+      "zips": [
+        "92602",
+        "92603",
+        "92604",
+        "92606",
+        "92612",
+        "92614",
+        "92617",
+        "92618",
+        "92620"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Huntington Beach",
+      "county": "Orange",
+      "zips": [
+        "92646",
+        "92647",
+        "92648",
+        "92649"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Garden Grove",
+      "county": "Orange",
+      "zips": [
+        "92840",
+        "92841",
+        "92843",
+        "92844",
+        "92845"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Orange",
+      "county": "Orange",
+      "zips": [
+        "92865",
+        "92866",
+        "92867",
+        "92868",
+        "92869"
+      ],
+      "aliases": [
+        "city of orange"
+      ],
+      "featured": false
+    },
+    {
+      "city": "Fullerton",
+      "county": "Orange",
+      "zips": [
+        "92831",
+        "92832",
+        "92833",
+        "92835"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Costa Mesa",
+      "county": "Orange",
+      "zips": [
+        "92626",
+        "92627"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Mission Viejo",
+      "county": "Orange",
+      "zips": [
+        "92691",
+        "92692"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Westminster",
+      "county": "Orange",
+      "zips": [
+        "92683"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Newport Beach",
+      "county": "Orange",
+      "zips": [
+        "92625",
+        "92660",
+        "92661",
+        "92662",
+        "92663"
+      ],
+      "aliases": [
+        "corona del mar",
+        "balboa island"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Newport Coast",
+      "county": "Orange",
+      "zips": [
+        "92657"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Buena Park",
+      "county": "Orange",
+      "zips": [
+        "90620",
+        "90621"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Tustin",
+      "county": "Orange",
+      "zips": [
+        "92780",
+        "92782"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Lake Forest",
+      "county": "Orange",
+      "zips": [
+        "92630"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Yorba Linda",
+      "county": "Orange",
+      "zips": [
+        "92886",
+        "92887"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Laguna Niguel",
+      "county": "Orange",
+      "zips": [
+        "92677"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "San Clemente",
+      "county": "Orange",
+      "zips": [
+        "92672",
+        "92673"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "La Habra",
+      "county": "Orange",
+      "zips": [
+        "90631"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Placentia",
+      "county": "Orange",
+      "zips": [
+        "92870"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Fountain Valley",
+      "county": "Orange",
+      "zips": [
+        "92708"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Cypress",
+      "county": "Orange",
+      "zips": [
+        "90630"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Brea",
+      "county": "Orange",
+      "zips": [
+        "92821",
+        "92823"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Rancho Santa Margarita",
+      "county": "Orange",
+      "zips": [
+        "92688"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Aliso Viejo",
+      "county": "Orange",
+      "zips": [
+        "92656"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Laguna Hills",
+      "county": "Orange",
+      "zips": [
+        "92653"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Laguna Beach",
+      "county": "Orange",
+      "zips": [
+        "92651"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Laguna Woods",
+      "county": "Orange",
+      "zips": [
+        "92637"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Dana Point",
+      "county": "Orange",
+      "zips": [
+        "92624",
+        "92629"
+      ],
+      "aliases": [
+        "capistrano beach"
+      ],
+      "featured": false
+    },
+    {
+      "city": "San Juan Capistrano",
+      "county": "Orange",
+      "zips": [
+        "92675"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Seal Beach",
+      "county": "Orange",
+      "zips": [
+        "90740"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Los Alamitos",
+      "county": "Orange",
+      "zips": [
+        "90720"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Stanton",
+      "county": "Orange",
+      "zips": [
+        "90680"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "La Palma",
+      "county": "Orange",
+      "zips": [
+        "90623"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Villa Park",
+      "county": "Orange",
+      "zips": [
+        "92861"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Ladera Ranch",
+      "county": "Orange",
+      "zips": [
+        "92694"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Foothill Ranch",
+      "county": "Orange",
+      "zips": [
+        "92610"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Coto de Caza",
+      "county": "Orange",
+      "zips": [
+        "92679"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Trabuco Canyon",
+      "county": "Orange",
+      "zips": [
+        "92679"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Midway City",
+      "county": "Orange",
+      "zips": [
+        "92655"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Thousand Oaks",
+      "county": "Ventura",
+      "zips": [
+        "91360",
+        "91362"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Newbury Park",
+      "county": "Ventura",
+      "zips": [
+        "91320"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Oak Park",
+      "county": "Ventura",
+      "zips": [
+        "91377"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Simi Valley",
+      "county": "Ventura",
+      "zips": [
+        "93063",
+        "93065"
+      ],
+      "aliases": [],
+      "featured": true
+    },
+    {
+      "city": "Moorpark",
+      "county": "Ventura",
+      "zips": [
+        "93021"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Camarillo",
+      "county": "Ventura",
+      "zips": [
+        "93010",
+        "93012"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Somis",
+      "county": "Ventura",
+      "zips": [
+        "93066"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Oxnard",
+      "county": "Ventura",
+      "zips": [
+        "93030",
+        "93033",
+        "93035",
+        "93036"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Port Hueneme",
+      "county": "Ventura",
+      "zips": [
+        "93041"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Ventura",
+      "county": "Ventura",
+      "zips": [
+        "93001",
+        "93003",
+        "93004"
+      ],
+      "aliases": [
+        "san buenaventura"
+      ],
+      "featured": true
+    },
+    {
+      "city": "Ojai",
+      "county": "Ventura",
+      "zips": [
+        "93023"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Santa Paula",
+      "county": "Ventura",
+      "zips": [
+        "93060"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Fillmore",
+      "county": "Ventura",
+      "zips": [
+        "93015"
+      ],
+      "aliases": [],
+      "featured": false
+    },
+    {
+      "city": "Piru",
+      "county": "Ventura",
+      "zips": [
+        "93040"
+      ],
+      "aliases": [],
+      "featured": false
+    }
+  ]
+}
