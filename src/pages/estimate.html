@@ -1,0 +1,124 @@
+<section class="page-hero container">
+  <p class="kicker">Estimate</p>
+  <h1>Your installed price, line by line.</h1>
+  <p>Pick each window, set the color and glass, and enter width × height in inches. Installation is in the total. Order when you’re ready, or book a measurement and keep this number as the starting price.</p>
+</section>
+<div class="container" id="estimator">
+  <div class="est-layout">
+    <div>
+      <section class="panel" id="area-panel">
+        <h2>Service area</h2>
+        <form id="est-area-form">
+          <div class="area-row">
+            <input id="est-area" name="q" aria-label="ZIP or city" placeholder="ZIP or city">
+            <button class="btn" id="est-area-go" type="submit">Check</button>
+          </div>
+        </form>
+        <p class="area-status" id="area-status" role="status">Enter a ZIP or city to see if we install there.</p>
+      </section>
+
+      <section style="margin-top:1rem">
+        <div id="lines"></div>
+        <button class="btn btn-ghost" id="add-line" type="button">Add another window</button>
+      </section>
+
+      <section class="panel" id="addons" style="margin-top:1rem">
+        <h2>Installation options</h2>
+        <p class="lede">Retrofit insert installation is already in each window’s install price. Add only what this house needs.</p>
+        <label class="checkline"><input type="radio" name="installMethod" value="retrofit" checked> <span>Retrofit / insert — keeps the existing frame and is the usual choice in stucco</span></label>
+        <label class="checkline"><input type="radio" name="installMethod" value="full-frame"> <span>Full-frame replacement — the old frame comes out</span></label>
+        <label class="checkline"><input id="addon-stucco" type="checkbox"> <span>Stucco patch and color coat</span></label>
+        <label class="checkline"><input id="addon-removal" type="checkbox"> <span>Remove and dispose of the old window</span></label>
+        <label class="checkline"><input id="addon-permit" type="checkbox"> <span>Permit coordination for the project</span></label>
+      </section>
+
+      <section style="margin-top:1rem">
+        <h2>Two ways to finish</h2>
+        <div class="finish-grid">
+          <form class="panel" id="form-save" data-kind="estimate">
+            <h3>Email me this estimate</h3>
+            <p class="meta">We’ll send a follow-up. The total is not a contract.</p>
+            <label class="field">Name<input name="name" autocomplete="name" required></label>
+            <label class="field">Email<input name="email" type="email" autocomplete="email" required></label>
+            <label class="field">Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+            <label class="field">Notes<textarea name="notes" rows="3"></textarea></label>
+            {{SMS_CONSENT}}
+            <div class="hp"><label>Company website<input name="companyWebsite" tabindex="-1" autocomplete="off"></label></div>
+            <div class="form-error" hidden></div>
+            <button class="btn" type="submit">Save my estimate</button>
+          </form>
+
+          <form class="panel" id="form-order" data-kind="order">
+            <h3>Order online</h3>
+            <p class="meta">Review the cart in the summary, then send the order. No payment is taken.</p>
+            <div class="pay-slot" id="payment-slot">
+              <p class="kicker">Payment · coming soon</p>
+              <p>This is where a deposit step (for example Stripe) will plug in. There is no card field on this form, and we don’t store card numbers.</p>
+            </div>
+            <label class="field">Name<input name="name" autocomplete="name" required></label>
+            <label class="field">Email<input name="email" type="email" autocomplete="email" required></label>
+            <label class="field">Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+            <label class="field">Street address<input name="address" autocomplete="street-address" required></label>
+            <label class="field">City<input name="city" autocomplete="address-level2" required></label>
+            <label class="field">ZIP<input name="zip" inputmode="numeric" autocomplete="postal-code" required></label>
+            <label class="field">Notes<textarea name="notes" rows="3"></textarea></label>
+            {{SMS_CONSENT}}
+            <div class="hp"><label>Company website<input name="companyWebsite" tabindex="-1" autocomplete="off"></label></div>
+            <div class="form-error" hidden></div>
+            <button class="btn btn-sunset" type="submit">Submit order</button>
+          </form>
+
+          <form class="panel" id="form-book" data-kind="appointment">
+            <h3>Book a measurement</h3>
+            <p class="meta">We keep the estimate. The price shown is an estimate, and the final quote is confirmed after we measure on site.</p>
+            <label class="field">Name<input id="book-name" name="name" autocomplete="name" required></label>
+            <label class="field">Email<input id="book-email" name="email" type="email" autocomplete="email" required></label>
+            <label class="field">Phone<input id="book-phone" name="phone" type="tel" autocomplete="tel" required></label>
+            <label class="field">ZIP<input name="zip" inputmode="numeric" autocomplete="postal-code" required></label>
+            <label class="field">Preferred date<input id="book-date" name="date" type="date" required></label>
+            <label class="field">Time window<select id="book-time" name="timeWindow" required><option value="">Choose a window</option></select></label>
+            <label class="field">Second choice date<input name="altDate" type="date"></label>
+            <label class="field">Notes<textarea name="notes" rows="3"></textarea></label>
+            {{SMS_CONSENT}}
+            <div class="hp"><label>Company website<input name="companyWebsite" tabindex="-1" autocomplete="off"></label></div>
+            <div class="form-error" hidden></div>
+            <button class="btn btn-sunset" id="book-submit" type="submit">Request the visit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <aside class="panel est-summary" id="est-summary" aria-live="polite"></aside>
+  </div>
+  <div class="mobile-total" id="mobile-total">
+    <div><span class="meta" style="color:#ffd7b8">Installed estimate</span><strong id="mobile-total-amount">—</strong></div>
+    <a class="btn btn-sunset btn-small" href="#est-summary">Review</a>
+  </div>
+</div>
+<section class="container confirm" id="confirmation" hidden></section>
+
+<dialog id="measure-dialog" aria-labelledby="measure-title">
+  <h2 id="measure-title">How to measure the opening</h2>
+  <p>Measure the width in three places and the height in three places, inside the existing frame. We use the smallest width and the smallest height so the new window fits the tightest spot.</p>
+  <svg class="measure-fig" viewBox="0 0 360 230" role="img" aria-label="Diagram of a window opening with three width arrows and three height arrows">
+    <rect x="70" y="28" width="220" height="160" rx="4" fill="#f4efe8" stroke="#0c1c33" stroke-width="3"/>
+    <rect x="86" y="44" width="188" height="128" fill="#d7ecf8" stroke="#0c1c33" stroke-width="2"/>
+    <path d="M86 70h188M86 108h188M86 146h188" stroke="#ff7a3c" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <path d="M110 44v128M156 44v128M210 44v128" stroke="#1c6d76" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text x="78" y="22" fill="#9a3412" font-size="12" font-family="Outfit, sans-serif">Width: top, middle, bottom</text>
+    <text x="78" y="214" fill="#1c6d76" font-size="12" font-family="Outfit, sans-serif">Height: left, center, right</text>
+  </svg>
+  <div class="measure-grid">
+    <label class="field">Width top<input name="w1" inputmode="decimal" placeholder="36.25"></label>
+    <label class="field">Height left<input name="h1" inputmode="decimal" placeholder="60.5"></label>
+    <label class="field">Width middle<input name="w2" inputmode="decimal"></label>
+    <label class="field">Height center<input name="h2" inputmode="decimal"></label>
+    <label class="field">Width bottom<input name="w3" inputmode="decimal"></label>
+    <label class="field">Height right<input name="h3" inputmode="decimal"></label>
+  </div>
+  <p class="measure-result" aria-live="polite">Enter all six measurements.</p>
+  <div class="hero-actions">
+    <button class="btn" type="button" id="measure-apply">Use the smallest</button>
+    <button class="btn btn-ghost" type="button" id="measure-unsure">Not sure, measure for me</button>
+    <button class="text-btn" type="button" onclick="document.getElementById('measure-dialog').close()">Close</button>
+  </div>
+</dialog>
